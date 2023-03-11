@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cusotmer Feedback</title>
+  <style>
+    /* Define styles for the radio buttons and labels */
+    input[type="radio"] {
+      display: none;
+    }
+      
+    label {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 10px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      width:50px;
+      text-align: center;
+    }
+
+    input[type="radio"]:checked + label {
+      background-color: #00bfff;
+      color: #fff;
+    }
+    .btns{
+      margin: 10px;
+      margin-left: 10px;
+    }
+    textarea {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  resize: vertical;
+  width:400px;
+  height: 50px;
+}
+body{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+  
+}
+form{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+   padding:20px;
+   background-color:rgb( 255, 229, 204) ;
+   
+}
+.submit-button {
+  background-color: #0077c0;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin: 10px;;
+}
+
+.submit-button:hover {
+  background-color: #005ea6;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  
+}
+
+img{
+  align-items: center; 
+  margin-right: 10px;
+  height:100px;
+  width:250px;
+
+}
+h2{
+  color:#0077c0;
+}
+
+  </style>
+</head>
+<body>
+  <!-- <h1>What's Your Favorite Color?</h1> -->
+
+  <form id="Feedback-form" action="https://sheetdb.io/api/v1/f794nww913mkz" method="post">
+    <div class="btns" style="text-align: center;">
+      <img src="C:\Users\sailo\OneDrive\Desktop\logo2.PNG" alt="Image">
+     
+    </div>
+    <div class="btns">
+      <h2>Feedback</h2>
+      <p>A.How easy was it to navigate the website?</p>
+    <input type="radio" id="q1a" name="q1" value="1">
+    <label for="q1a">1</label>
+
+    <input type="radio" id="q1b" name="q1" value="2">
+    <label for="q1b">2</label>
+
+    <input type="radio" id="q1c" name="q1" value="3">
+    <label for="q1c">3</label>
+
+    <input type="radio" id="q1d" name="q1" value="4">
+    <label for="q1d">4</label>
+    <input type="radio" id="q1e" name="q1" value="5">
+    <label for="q1e">5</label>
+    </div>
+    <div class="btns">
+      <p>B.How long did it take you to find the product you were looking for?</p>
+    <input type="radio" id="q2a" name="q2" value="1">
+    <label for="q2a">1</label>
+
+    <input type="radio" id="q2b" name="q2" value="2">
+    <label for="q2b">2</label>
+
+    <input type="radio" id="q2c" name="q2" value="3">
+    <label for="q2c">3</label>
+
+    <input type="radio" id="q2d" name="q2" value="4">
+    <label for="q2d">4</label>
+    <input type="radio" id="q2e" name="q2" value="5">
+    <label for="q2e">5</label>
+  </div>
+  <div class="btns">
+    <p>C.How clear and detailed was the product information?</p>
+  <input type="radio" id="q3a" name="q3" value="1">
+  <label for="q3a">1</label>
+
+  <input type="radio" id="q3b" name="q3" value="2">
+  <label for="q3b">2</label>
+
+  <input type="radio" id="q3c" name="q3" value="3">
+  <label for="q3c">3</label>
+
+  <input type="radio" id="q3d" name="q3" value="4">
+  <label for="q3d">4</label>
+  <input type="radio" id="q3e" name="q3" value="5">
+  <label for="q3e">5</label>
+  </div>
+  <div class="btns">
+    <p>D.How easy was it to add products to your cart and checkout?</p>
+  <input type="radio" id="q4q" name="q4" value="1">
+  <label for="q4a">1</label>
+
+  <input type="radio" id="q4b" name="q4" value="2">
+  <label for="q4b">2</label>
+
+  <input type="radio" id="q4c" name="q4" value="3">
+  <label for="q4c">3</label>
+
+  <input type="radio" id="q4d" name="q4" value="4">
+  <label for="q4d">4</label>
+  <input type="radio" id="q4e" name="q4" value="5">
+  <label for="q4e">5</label>
+  </div>
+  <div class="btns">
+    <p>E.How satisfied were you with the prices of the products?</p>
+  <input type="radio" id="q5a" name="q5" value="1">
+  <label for="q5a">1</label>
+
+  <input type="radio" id="q5b" name="q5" value="2">
+  <label for="q5b">2</label>
+
+  <input type="radio" id="q5c" name="q5" value="3">
+  <label for="q5c">3</label>
+
+  <input type="radio" id="q5d" name="q5" value="4">
+  <label for="q5d">4</label>
+  <input type="radio" id="q5e" name="q5" value="5">
+  <label for="q5e">5</label>
+  </div>
+  <div class="btns">
+    <p>F.How satisfied were you with the selection of products available?</p>
+  <input type="radio" id="q6a" name="q6" value="1">
+  <label for="q6a">1</label>
+
+  <input type="radio" id="q6b" name="q6" value="2">
+  <label for="q6b">2</label>
+
+  <input type="radio" id="q6c" name="q6" value="3">
+  <label for="q6c">3</label>
+
+  <input type="radio" id="q6d" name="q6" value="4">
+  <label for="q6d">4</label>
+  <input type="radio" id="q6e" name="q6" value="5">
+  <label for="q6e">5</label>
+  </div>
+  <div>
+    <p>Comments & Review</p>
+    <textarea name="Review" id="" cols="50" rows="3"></textarea>
+  </div>
+ <center> <button  type="submit" class="submit-button">Submit</button></center>
+  
+  </form>
+</body>
+<script>
+  var form = document.getElementById('Feedback-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("Feedback-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('Feedback Successfully Submitted ')
+      form.reset();
+    });
+  });
+</script>
+
+</html>
